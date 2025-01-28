@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Tareas</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gestión de Tareas</h1>
+        <button onclick="addTask()" style="margin: 1rem;">Agregar Tarea</button>
+        <button onclick="addTaskContainer()" style="margin: 1rem;">Agregar Contenedor de Tareas</button>
+    </header>
+    <main>
+        <section class="task-container">
+            <article class="task-card">
+                <h2 class="task-title">Título:</h2>
+                <p class="task-due-date"><strong>Fecha de entrega:</strong></p>
+                <p class="task-subject"><strong>Materia:</strong></p>
+                <p class="task-priority"><strong>Prioridad:</strong></p>
+                <p class="task-description"><strong>Descripción:</strong></p>
+                <div class="task-actions">
+                    <button class="btn-edit" onclick="editTask(this)">Editar</button>
+                    <button class="btn-delete" onclick="deleteTask(this)">Eliminar</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="java.js"></script>
+</body>
+
+</html>
